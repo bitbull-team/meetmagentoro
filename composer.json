@@ -1,0 +1,27 @@
+{
+    "name": "bitbull-team/meetmagentoro",
+    "description": "sample magento 2 module starter",
+    "require": {
+      "php": "~5.5.0|~5.6.0|~7.0.0",
+        "magento/magento-composer-installer": "*"
+    },
+    "type": "magento2-module",
+    "license": [ "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Bitbull\\MeetMagentoRo\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Bitbull/MeetMagentoRo"
+            ]
+        ]
+    }
+}
