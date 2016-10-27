@@ -1,0 +1,49 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="steps" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="shipping-step" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="shippingAddress" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="shipping-address-fieldset" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="invoice-checkbox" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Magento_Ui/js/form/element/boolean</item>
+                                                                    <item name="config" xsi:type="array">
+                                                                        <!--customScope is used to group elements within a single form (e.g. they can be validated separately)-->
+                                                                        <item name="customScope" xsi:type="string">shippingAddress.custom_attributes</item>
+                                                                        <item name="template" xsi:type="string">ui/form/field</item>
+                                                                        <item name="elementTmpl" xsi:type="string">Bitbull_MeetMagentoRo/form/element/invoice-check</item>
+                                                                    </item>
+                                                                    <item name="provider" xsi:type="string">checkoutProvider</item>
+                                                                    <item name="dataScope" xsi:type="string">shippingAddress.custom_attributes.invoice-checkbox</item>
+                                                                    <item name="description" xsi:type="string">Request Invoice</item>
+                                                                    <item name="sortOrder" xsi:type="string">121</item>
+                                                                </item>
+                                                                <item name="company" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">Bitbull_MeetMagentoRo/js/invoice-input</item>
+                                                                    <item name="sortOrder" xsi:type="string">122</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

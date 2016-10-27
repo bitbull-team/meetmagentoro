@@ -2,8 +2,11 @@
     "name": "bitbull-team/meetmagentoro",
     "description": "sample magento 2 module starter",
     "require": {
-      "php": "~5.5.0|~5.6.0|~7.0.0",
-        "magento/magento-composer-installer": "*"
+        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "magento/magento-composer-installer": "*",
+        "magento/module-ui": "100.1.*",
+        "magento/framework": "100.1.*",
+        "magento/module-checkout": "100.1.*"
     },
     "type": "magento2-module",
     "license": [ "MIT"
